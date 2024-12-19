@@ -12,11 +12,6 @@ document.body.style.backgroundColor = 'brown'
 document.body.style.color = 'yellow'
 
 
-
-
-
-
-
 //label show data 
 const handleShows = (show) => {
     //create elements to hold content
@@ -58,9 +53,21 @@ const handleShows = (show) => {
     //make name event listener
     name.addEventListener('dblclick', () => {
         summary.innerText = show.summary
+        summary.style.backgroundColor = 'black'
         genres.appendChild(summary)
+        
     })
 
+    //make zoom in event listener
+    image.addEventListener('mouseover', () => {
+        image.style.zoom = '1.8'
+
+    })
+
+    //make a zoom out in event listener 
+    image.addEventListener('mouseleave', () => {
+        image.style.zoom = '1'
+    })
 }
 
 
