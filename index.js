@@ -46,9 +46,10 @@ const handleShows = (show) => {
     
     //make button event listener
     button.addEventListener('click', () => {
-        button.innerText = `Likes: ${Likes++}`
+        button.innerText = `Likes: ${Likes}`
+        }
     
-    });
+    );
 
     //make name event listener
     name.addEventListener('dblclick', () => {
